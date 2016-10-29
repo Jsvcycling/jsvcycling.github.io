@@ -1,43 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+title: Josh Vega
+---
 
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-        <link rel="stylesheet" type="text/css" href="public/custom.css">
-
-        <title>Josh Vega</title>
-    </head>
-    <body>
-        <div class="section header">
-            <div class="container">
-                <div class="row">
-                    <div class="one-half column">
-                        <h1>Josh Vega</h1>
-                        <h5>New Jersey Institute of Technology</h5>
-                        <h5>Computer Science (B.S.)</h5>
-                        <h5><a href="https://github.com/jsvcycling" target="_blank">GitHub</a></h5>
-                        <h5><a href="https://twitter.com/jsvcycling" target="_blank">Twitter</a></h5>
-                        <h5><a href="https://linkedin.com/in/jsvcycling" target="_blank">LinkedIn</a></h5>
-                    </div>
-                    <div class="one-half column">
-                        <!-- TODO: Add more stuff here... -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section about">
-            <!-- TODO: Add some about stuff here... -->
-        </div>
-
-        <div class="section projects">
-            <!-- TODO: Add some stuff about past projects here... -->
-        </div>
-
-        <div class="section contact">
-            <!-- TODO: Add some contact info stuff here... -->
-        </div>
-    </body>
-</html>
+{% if site.posts.size > 0 %}
+  <h2 id="posts_header">Recent Posts</h2>
+  <ul id="post_list">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p id="noposts_message"><em>No posts found. Check back later.</em></p>
+{% endif %}

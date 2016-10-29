@@ -1,0 +1,51 @@
+body {
+  font-size: 14pt;
+  font-family: "Inconsolata", monospace;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#name {
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  font-size: 250%;
+}
+
+#name > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#tagline {
+  margin: 1em 0 1.5em 0;
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-link {
+  display: inline;
+  margin: 0 1em;
+}
+
+.navbar-link > a {
+  color: #000000;
+}
+
+#posts_header {
+  margin: 1.5em 0 0 0;
+  text-align: center;
+}
+
+#noposts_message {
+  margin: 2.5em 0 0 0;
+  text-align: center;
+}
