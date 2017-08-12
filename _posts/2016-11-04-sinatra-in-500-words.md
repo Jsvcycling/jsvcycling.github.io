@@ -77,9 +77,9 @@ folder and run the following command:
 ruby server.rb
 ```
 
-If all goes well, after a few seconds you should be able to navigate to
-[http://localhost:4567/](http://localhost;4567) in your web browser and see the
-simple "hello world" page from above.
+If all goes well, after a few seconds you should be able to navigate
+to [http://localhost:4567/](http://localhost:4567) in your web browser and see
+the simple "hello world" page from above.
 
 Congratulations, you've officially written your first Sinatra server!
 
@@ -94,5 +94,3 @@ projects.
 
 So next time you're thinking of writing a web server, consider Sinatra to get
 you up and running in no time.
-
-*Josh*
