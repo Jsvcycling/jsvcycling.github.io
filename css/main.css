@@ -2,12 +2,12 @@
 @import url(custom.css);
 
 body {
-  font-size: 14pt;
+  font-size: 15pt;
   font-family: serif;
   text-align: justify;
 }
 
-h1, h2 {
+h1, h2, h3 {
   padding: 0;
   margin: 0;
 }
