@@ -41,5 +41,20 @@ Because this model is a complex derivative, we're going to solve it numerically
 using the second-order Runge-Kutta method known as [Heun's
 method](https://en.wikipedia.org/wiki/Heun's_method) (sometimes referred to as
 the modified Euler method). In addition, we'll be simulating it for a 100
-seconds with an a constant applied current ($$I_{app}$$) of 20 nA. All other
+seconds with an a constant applied current ($$I_{app}$$) of 12 nA. All other
 values and equations are given from the model.
+
+All tests are executed on a [Linode](https://www.linode.com/) nanode instance
+running Debian 9 amd64 (<i>I'm currently working to get MATLAB setup on a nanode
+instance</i>). The table below shows the specific version of each language that
+is being used.
+
+| Language  | Version |
+|-----------|---------|
+| C (GCC)   | 6.3.0   |
+| C++ (G++) | 6.3.0   |
+| Go        | 1.11.2  |
+| Julia     | 1.0.1   |
+| Python    | 3.5.3   |
+| Ruby      | 2.4.4   |
+| Rust      | 1.30.0  |
