@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Hodgkin-Huxley Model as a Performance Metric
+title: The Hodgkin-Huxley Model as a Performance Matric
 ---
 
 <i>The source code associated with this post is available on
@@ -56,11 +56,8 @@ across three attempts.
 | C double   | gcc 6.3.0 | 0.919 s  | 39.901 MB    |
 | C++ float  | g++ 6.3.0 | 1.092 s  | 22.254 MB    |
 | C++ double | g++ 6.3.0 | 1.273 s  | 41.723 MB    |
-| Go         | 1.11.2    | TBD      | TBD          |
 | Julia      | 1.0.1     | 6.287 s  | 222.613 MB   |
 | Python     | 3.5.3     | 68.954 s | 64.082 MB    |
-| Ruby       | 2.4.4     | TBD      | TBD          |
-| Rust       | 1.30.0    | TBD      | TBD          |
 
 Now let's dive a little bit more into the results of each language.
 
@@ -113,10 +110,6 @@ features but still really care about performance then C++ is the way to
 go. Otherwise, it's probably best to stick with the more traditional data
 science languages.
 
-<h3>Go</h3>
-
-<i>To be written...</i>
-
 <h3>Julia</h3>
 
 I'll admit it, I was really expecting a lot from Julia. I've heard a lot of
@@ -144,16 +137,37 @@ usage down to a more reasonable level.
 
 <h3>Python</h3>
 
-<i>To be written...</i>
+I'm not sure what I found more surprising: Julia's memory usage or Python's
+run-time. I mean, I didn't expect anything near C or C++ level performance, but
+10x slower than Julia seems a bit excessive. Python 3 is a language that I tend
+to feel fairly comfortable proficient in so I don't believe that I wrote
+inherently poor code. Could my use of numpy be causing the slow down? In my past
+experiences with Python 3 as a data science language and using packages like
+numpy (and pandas in many cases), I found that it was generally faster than
+standard python lists.
 
-<h3>Ruby</h3>
-
-<i>To be written...</i>
-
-<h3>Rust</h3>
-
-<i>To be written...</i>
+I might have to take another look at the Python 3 implementation and see if
+there's a more efficient and "python-ic" way to solving the equation. I know
+Python is relatively slow, but 68 seconds just seems way too damn slow compared
+to what I know and my own past experience. I really hope I just made some kind
+of newbie mistake or something with the Python implementation because otherwise
+I think I'll have to re-evaluate my usage of Python for data science.
 
 <h2>Conclusion</h2>
 
-<i>To be written...</i>
+Overall, I didn't really find anything to be mid-boggling in any way. While
+Julia's memory usage and Python's run-time were pretty bad I can't say I didn't
+expect them (well the Python one at least, I didn't really know what to expect
+from Julia). C and C++ are still king when it comes to raw performance but they
+really lack the approachability and easy-of-use that languages like Python 3 and
+Julia can offer. With the exception of the memory usage, I feel that Julia has
+the best balance between power and usability of the languages that were
+tested. Because of this, I'm really interested to learn about it more and maybe
+even start applying it to my data science needs both with my current research
+position and in my personal projects.
+
+If I am able to find the time later on, I plan on diving more deeply into my
+concerns with Julia and Python 3 and figure out of I'm able to solve them. I
+also would like to test more languages like MATLAB, R, Ruby, Octave, and any
+others that I can think of between now and then. For now though, this simple
+performance test will have to suffice.
