@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Hodgkin-Huxley Model as a Performance Matric
+title: The Hodgkin-Huxley Model as a Performance Metric
 ---
 
 <i>The source code associated with this post is available on
